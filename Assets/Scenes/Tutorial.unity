@@ -26585,7 +26585,7 @@ GameObject:
   - component: {fileID: 944790456}
   m_Layer: 0
   m_Name: Clock
-  m_TagString: Untagged
+  m_TagString: clock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26900,6 +26900,7 @@ MonoBehaviour:
   audioSource: {fileID: 1206694237}
   bed: {fileID: 8300000, guid: bc203f29362104241a443a94ccfa410c, type: 3}
   wall: {fileID: 8300000, guid: f4caf67fdd618004bb583b3660e4f503, type: 3}
+  clock: {fileID: 8300000, guid: bceaf9ff6226271439c907fa4659c8c0, type: 3}
 --- !u!82 &1206694237
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27831,7 +27832,7 @@ GameObject:
   - component: {fileID: 1520806139}
   m_Layer: 0
   m_Name: 2 chairs
-  m_TagString: Untagged
+  m_TagString: chair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
