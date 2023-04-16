@@ -8,6 +8,8 @@ TagManager:
   - bed
   - clock
   - sofa
+  - shelf
+  - cabinet
   layers:
   - Default
   - TransparentFX
