@@ -1,3 +1,4 @@
-aaa
-bbb
-ccc
+What is it, a power outage?
+It's so dark in the room, I have to use my phone to light up first
+Yeah. The electricity is in the kitchen on the ground floor, go and see if it's tripped.
+Use "w", "a", "s" and "d" to move and when near an obstacle the character will be alerted to what it is.

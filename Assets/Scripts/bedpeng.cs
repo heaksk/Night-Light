@@ -9,6 +9,7 @@ public class bedpeng : MonoBehaviour
     public AudioClip bed;
     public AudioClip wall;
     public AudioClip clock;
+    public AudioClip sofa;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,6 +24,9 @@ public class bedpeng : MonoBehaviour
                 break;
             case "clock":
                 audioSource.clip = clock;
+                break;
+            case "sofa":
+                audioSource.clip = sofa;
                 break;
         }
         audioSource.Play();
