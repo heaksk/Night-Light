@@ -12,6 +12,15 @@ public class bedpeng : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         print(collision.gameObject.name);
+        switch(collision.gameObject.tag)
+        {
+            case "wall":
+            audioSource.clip = wall;
+                break;
+            case "bed":
+                audioSource.clip = bed;
+                break;
+        }
         audioSource.Play();
     }
     // Start is called before the first frame update
