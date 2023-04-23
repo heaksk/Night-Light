@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     private Vector3 movement;
     private float movementSqrMagnitude;
     public float walkSpeed = 1.0f;
+    private Vector3 playerPosition;
     Animator animator;
 
     private bool movedLeft = false;
@@ -104,6 +105,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         movement = Vector3.ClampMagnitude(movement, 1.0f);
