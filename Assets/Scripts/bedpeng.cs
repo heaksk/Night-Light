@@ -12,6 +12,11 @@ public class bedpeng : MonoBehaviour
     public AudioClip sofa;
     public AudioClip cabinet;
     public AudioClip shelf;
+    public AudioClip book;
+    public AudioClip table;
+    public AudioClip chair;
+    public AudioClip door;
+    public AudioClip key;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -30,11 +35,26 @@ public class bedpeng : MonoBehaviour
             case "sofa":
                 audioSource.clip = sofa;
                 break;
-            case "cabunet":
+            case "cabinet":
                 audioSource.clip = cabinet;
                 break;
             case "shelf":
                 audioSource.clip = shelf;
+                break;
+            case "book":
+                audioSource.clip = book;
+                break;
+            case "table":
+                audioSource.clip = table;
+                break;
+            case "chair":
+                audioSource.clip = chair;
+                break;
+            case "door":
+                audioSource.clip = door;
+                break;
+            case "key":
+                audioSource.clip = key;
                 break;
         }
         audioSource.Play();
