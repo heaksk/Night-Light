@@ -16,10 +16,6 @@ public class talkUI : MonoBehaviour
     {
         Button.SetActive(false);
     }
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     private void Update()
