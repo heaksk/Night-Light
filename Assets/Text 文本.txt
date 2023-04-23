@@ -1,4 +1,6 @@
-What is it, a power outage?
-It's so dark in the room, I have to use my phone to light up first
-Yeah. The electricity is in the kitchen on the ground floor, go and see if it's tripped.
-Use "w", "a", "s" and "d" to move and when near an obstacle the character will be alerted to what it is.
+What is it ? A power outage?
+It's so dark in the room, I have to use my phone to light up first.
+Ok, I need to find a way out of this room.
+I can move by using "w", "a", "s", "d" or the arrow keys.
+When I'm near an obstacle I will be alerted to what it is.
+I think my door is locked. I must find the key...
