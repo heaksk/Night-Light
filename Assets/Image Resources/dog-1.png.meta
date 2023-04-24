@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed7a2cee01eb5324fa052fd335460d20
+guid: e1bd849ca4bab874cb13323ce2434fdc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog_0
+      name: dog-1_0
       rect:
         serializedVersion: 2
         x: 7
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a32ff77937894fa43b39afd81cfa5733
-      internalID: -1586215577
+      spriteID: 9a69ca639d310c54aa1a2b68bd20932d
+      internalID: 346548645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_1
+      name: dog-1_1
       rect:
         serializedVersion: 2
         x: 49
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bb8aa754460089478cb130ab9b9c401
-      internalID: 1579195424
+      spriteID: 4aad0c601a781f340a1770a0de35cf25
+      internalID: -356795536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_2
+      name: dog-1_2
       rect:
         serializedVersion: 2
         x: 91
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f812382b949db242a64df40490e6beb
-      internalID: 2116688456
+      spriteID: bc8cdcc83a8046c44a86cbac63eaf4d1
+      internalID: -835250738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_3
+      name: dog-1_3
       rect:
         serializedVersion: 2
         x: 1
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26f790426637e544a992ac6f8c11b3c4
-      internalID: -1642039242
+      spriteID: 16b9f57e673fe9d458508653abba89af
+      internalID: 1942748712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_4
+      name: dog-1_4
       rect:
         serializedVersion: 2
         x: 47
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb601af1c5f3b074290cd583e2176e45
-      internalID: -1993446770
+      spriteID: ef8d87cbe349da44d81d708c84e0d073
+      internalID: -117807815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_5
+      name: dog-1_5
       rect:
         serializedVersion: 2
         x: 93
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bb5166adda6ea64da40276660fff02d
-      internalID: -1481176082
+      spriteID: 71dcf57027ac17640beb8ae8d3a6fc6a
+      internalID: -139929588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_6
+      name: dog-1_6
       rect:
         serializedVersion: 2
         x: 7
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f6d71ae7377e7429f02304e24bea93
-      internalID: 760477233
+      spriteID: b26f4532834235e408536a60c696e133
+      internalID: -1295437501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_7
+      name: dog-1_7
       rect:
         serializedVersion: 2
         x: 49
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ee6b5d4f19682846999707b2b318811
-      internalID: -1602237538
+      spriteID: 36ca6d6042174fd4c80fc4b913ffc67d
+      internalID: -1100485762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog_8
+      name: dog-1_8
       rect:
         serializedVersion: 2
         x: 91
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30dbe8386bfc42b479176370713b5427
-      internalID: 2122996053
+      spriteID: 605806528b109f446a2e3a47c1ae76db
+      internalID: -221753628
       vertices: []
       indices: 
       edges: []
@@ -317,15 +317,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog_8: 2122996053
-      dog_2: 2116688456
-      dog_0: -1586215577
-      dog_6: 760477233
-      dog_1: 1579195424
-      dog_3: -1642039242
-      dog_4: -1993446770
-      dog_7: -1602237538
-      dog_5: -1481176082
+      dog-1_5: -139929588
+      dog-1_8: -221753628
+      dog-1_3: 1942748712
+      dog-1_2: -835250738
+      dog-1_7: -1100485762
+      dog-1_0: 346548645
+      dog-1_6: -1295437501
+      dog-1_4: -117807815
+      dog-1_1: -356795536
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
