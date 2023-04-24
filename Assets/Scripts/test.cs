@@ -19,6 +19,7 @@ public class test : MonoBehaviour
     {
         GetTextFromFile(textFile);
         index = 0;
+        //this.GetComponent<KeyCode.W>.enabled= false
     }
 
     // Update is called once per frame
