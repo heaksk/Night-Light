@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    [SerializeField] private Flashlight Flashlight;
+
     private Vector3 movement;
     private float movementSqrMagnitude;
     public float walkSpeed = 1.0f;
@@ -98,13 +101,36 @@ public class Player : MonoBehaviour
         }
     }
 
+    public Vector3 GetMouseWorldPosition() {
+            Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+            vec.z = 0f;
+            return vec;
+        }
+        public Vector3 GetMouseWorldPositionWithZ() {
+            return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+        }
+        public Vector3 GetMouseWorldPositionWithZ(Camera worldCamera) {
+            return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
+        }
+        public Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera) {
+            Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+            return worldPosition;
+        }
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerPosition = transform.position;
     }
 
-    void Update()
+   void Update()
     {
+
+        Vector3 targetPosition = GetMouseWorldPosition();
+        playerPosition = transform.position;
+        Vector3 aimDir = (targetPosition - playerPosition).normalized;
+        Flashlight.SetAimDirection(aimDir);
+        Flashlight.SetOrigin(transform.position);
 
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
@@ -114,5 +140,6 @@ public class Player : MonoBehaviour
         transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
         Animation();
     }   
+
 }
 
