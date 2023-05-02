@@ -1,0 +1,4 @@
+I can move with "WASD" keys or the arrow keys too.
+I can move my flashlight with the mouse or touchpad.
+Theres an exit that may require a key to open...
+Lets go and find a way out of this room.

@@ -1,3 +1,0 @@
-how to play:
-use "wasd" to move, find the key or other item to open the door.
-each room has a book show the information about the key item
