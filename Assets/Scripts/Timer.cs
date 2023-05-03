@@ -57,9 +57,9 @@ public class Timer : MonoBehaviour
     }
 
     public enum TimerFormats{
-    Whole,
-    Tenths,
-    Hundredths
+        Whole,
+        Tenths,
+        Hundredths
     }
 
     public void Retry(){

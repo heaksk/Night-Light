@@ -1,15 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
 
+    [Header("FlashLight Object")]
     [SerializeField] private Flashlight Flashlight;
 
+
+    [Header("Movement")]
+    public float walkSpeed = 3.0f;
     private Vector3 movement;
     private float movementSqrMagnitude;
-    public float walkSpeed = 1.0f;
     private Vector3 playerPosition;
     Animator animator;
 
@@ -17,6 +22,14 @@ public class Player : MonoBehaviour
     private bool movedRight = false;
     private bool movedUp = false;
     private bool movedDown = false;
+
+    [Header("Key Counter")]
+    [SerializeField] public TextMeshProUGUI keyCount;
+    public event EventHandler OnKeysChanged;
+    private List<Key.KeyType> keyList;
+    private int keyCounter;
+
+    //Walking Animation
 
     void Animation()
     {
@@ -101,6 +114,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    //Flashlight
+
     public Vector3 GetMouseWorldPosition() {
             Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
             vec.z = 0f;
@@ -116,6 +131,64 @@ public class Player : MonoBehaviour
             Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
             return worldPosition;
         }
+
+    // Key
+
+    private void Awake()
+    {
+        keyList = new List<Key.KeyType>();
+    }
+
+    public List<Key.KeyType> GetKeyList()
+    {
+        return keyList;
+    }
+
+    public void AddKey(Key.KeyType keyType)
+    {
+        Debug.Log("Added Key: " + keyType);
+        keyList.Add(keyType);
+        keyCounter += 1;
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
+        keyCount.text = keyCounter.ToString();
+    }
+
+    public void RemoveKey(Key.KeyType keyType)
+    {
+        keyList.Remove(keyType);
+        keyCounter -= 1;
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
+        keyCount.text = keyCounter.ToString();
+    }
+
+    public bool ContainsKey(Key.KeyType keyType)
+    {
+        return keyList.Contains(keyType);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        Key key = collider.GetComponent<Key>();
+        if (key != null)
+        {
+            AddKey(key.GetKeyType());
+            Destroy(key.gameObject);
+        }
+
+        KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
+        if (keyDoor != null)
+        {
+            if (ContainsKey(keyDoor.GetKeyType()))
+            {
+                // Currently holding Key to open this door
+                RemoveKey(keyDoor.GetKeyType());
+                keyDoor.OpenDoor();
+            }
+        }
+    }
+
+    //Start and Update
 
     void Start()
     {
