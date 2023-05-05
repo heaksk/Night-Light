@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class reedBook : MonoBehaviour
+public class readBook : MonoBehaviour
 {
     // Start is called before the first frame update
     [Header("UI")]

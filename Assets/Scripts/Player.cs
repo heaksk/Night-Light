@@ -166,9 +166,15 @@ public class Player : MonoBehaviour
         return keyList.Contains(keyType);
     }
 
+    public int GetKeys(){
+        return keyCounter;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+
+        //If player touches a Key
         Key key = collider.GetComponent<Key>();
         if (key != null)
         {
@@ -176,14 +182,14 @@ public class Player : MonoBehaviour
             Destroy(key.gameObject);
         }
 
-        KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
-        if (keyDoor != null)
+        //If player touches a Door
+        Door door = collider.GetComponent<Door>();
+        if (door != null)
         {
-            if (ContainsKey(keyDoor.GetKeyType()))
+            if (ContainsKey(door.GetKeyType()))
             {
                 // Currently holding Key to open this door
-                RemoveKey(keyDoor.GetKeyType());
-                keyDoor.OpenDoor();
+                door.OpenDoor();
             }
         }
     }
