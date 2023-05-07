@@ -5,6 +5,8 @@ using UnityEngine;
 public class cameraLimit : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Vector2 minPosition;
+    public Vector2 maxPosition;
     void Start()
     {
         
