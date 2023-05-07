@@ -6,6 +6,9 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    [Header("Key and AudioSource")]
+    public AudioSource audioSource;
+    public AudioClip keyclip;
 
     [Header("FlashLight Object")]
     [SerializeField] private Flashlight Flashlight;
@@ -179,6 +182,8 @@ public class Player : MonoBehaviour
         if (key != null)
         {
             AddKey(key.GetKeyType());
+            audioSource.clip = keyclip;
+            audioSource.Play();
             Destroy(key.gameObject);
         }
 
