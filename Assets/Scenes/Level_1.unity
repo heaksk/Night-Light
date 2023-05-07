@@ -8392,6 +8392,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1195fdaf934cae248a827a283524b4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1663702377 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1206694237, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
+  m_PrefabInstance: {fileID: 1936302693500983656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1713512619
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,7 +9872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: It says the door is at the bottom and the key is in the house on the right
+  m_Text: A book! Lets see what it says...
 --- !u!222 &2129283322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10051,7 +10056,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5596401560457368131, guid: 3639d987e95888c449fe2ab135ae684e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5596401560457368131, guid: 3639d987e95888c449fe2ab135ae684e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3639d987e95888c449fe2ab135ae684e, type: 3}
 --- !u!1001 &1936302693500983656
@@ -10067,6 +10077,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
+      propertyPath: keyclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 851657d3588cc434a9d48eead916bad5, type: 3}
+    - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: keyCount
       value: 
       objectReference: {fileID: 865560114}
@@ -10078,6 +10092,10 @@ PrefabInstance:
       propertyPath: Flashlight
       value: 
       objectReference: {fileID: 1319533866}
+    - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1663702377}
     - target: {fileID: 1206694236, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: bed
       value: 
