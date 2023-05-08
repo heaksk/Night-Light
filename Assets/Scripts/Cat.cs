@@ -34,12 +34,14 @@ public class Cat : MonoBehaviour
 	}
 
 
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.name.Equals("Doors") && !isSafeOpened)
 		{
 			codePanel.SetActive(true);
 		}
+
 	}
 
 	void OnTriggerExit2D(Collider2D col)
@@ -48,5 +50,6 @@ public class Cat : MonoBehaviour
 		{
 			codePanel.SetActive(false);
 		}
+
 	}
 }
