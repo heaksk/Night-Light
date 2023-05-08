@@ -23,10 +23,14 @@ public class lifhtOnOff : MonoBehaviour
         if (distance < 2)//¾àÀëÅÐ¶ÏÌõ¼þ
         {
             light1.SetActive(true);
+            light2.SetActive(true);
+            light3.SetActive(true);
         }
         else
         {
             light1.SetActive(false);
+            light2.SetActive(false);
+            light3.SetActive(false);
         }
     }
 }

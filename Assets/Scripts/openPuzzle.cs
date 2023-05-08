@@ -11,6 +11,11 @@ public class openPuzzle : MonoBehaviour
 
     public int KeysNeeded;
 
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
     public Key.KeyType GetKeyType()
     {
         return keyType;
@@ -25,6 +30,11 @@ public class openPuzzle : MonoBehaviour
                 player.RemoveKey(GetKeyType());
             }
             gameObject.SetActive(true);
+            //Instantiate(gameObject, transform.position, transform.rotation);
         }
+    }
+    private void Update()
+    {
+        OpenDoor();
     }
 }
