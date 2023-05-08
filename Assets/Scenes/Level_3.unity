@@ -1181,7 +1181,7 @@ MonoBehaviour:
   light2: {fileID: 686321662}
   light3: {fileID: 1937482628}
   camera: {fileID: 791271491}
-  distance: 0.3
+  distance: 0.2
 --- !u!1 &306589059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,7 +4291,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1070990932, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: keyCount
