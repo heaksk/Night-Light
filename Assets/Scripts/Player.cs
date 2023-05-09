@@ -10,10 +10,6 @@ public class Player : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip keyclip;
 
-    [Header("FlashLight Object")]
-    [SerializeField] private Flashlight Flashlight;
-
-
     [Header("Movement")]
     public float walkSpeed = 3.0f;
     private Vector3 movement;
@@ -117,24 +113,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    //Flashlight
-
-    public Vector3 GetMouseWorldPosition() {
-            Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-            vec.z = 0f;
-            return vec;
-        }
-        public Vector3 GetMouseWorldPositionWithZ() {
-            return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-        }
-        public Vector3 GetMouseWorldPositionWithZ(Camera worldCamera) {
-            return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
-        }
-        public Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera) {
-            Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
-            return worldPosition;
-        }
-
     // Key
 
     private void Awake()
@@ -209,12 +187,6 @@ public class Player : MonoBehaviour
 
    void Update()
     {
-
-        Vector3 targetPosition = GetMouseWorldPosition();
-        playerPosition = transform.position;
-        Vector3 aimDir = (targetPosition - playerPosition).normalized;
-        Flashlight.SetAimDirection(aimDir);
-        Flashlight.SetOrigin(transform.position);
 
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
