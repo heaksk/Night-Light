@@ -32,12 +32,7 @@ public class newD : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            rb.velocity = Vector2.zero;
-            rb.angularVelocity = 0;
-        }
-        if (collision.gameObject.CompareTag("wall"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0;
