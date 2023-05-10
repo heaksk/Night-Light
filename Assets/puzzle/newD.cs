@@ -37,5 +37,10 @@ public class newD : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0;
         }
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0;
+        }
     }
 }
