@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
 {
     [Header("Component")]
     public TextMeshProUGUI timerText;
+    public Player player;
 
     [Header("Timer Settings")]
     public float currentTime;
@@ -48,6 +49,7 @@ public class Timer : MonoBehaviour
             TimeUpScreen.SetActive(true);
             RetryButton.onClick.AddListener(Retry);
             TitleButton.onClick.AddListener(LoadTitle);
+            player.SetFrozen();
         }
         SetTimerText();
     }
@@ -69,6 +71,7 @@ public class Timer : MonoBehaviour
     public void LoadTitle(){
         SceneManager.LoadScene(0);
     }
+
 }
 
 

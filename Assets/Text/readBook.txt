@@ -1,1 +1,2 @@
-There are 3 keys in this room. I'm going to need all of them to exit through this door.
+"There are 3 keys hidden throughout this room." 
+Looks like I'm going to need all of them to exit through this door...

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private float movementSqrMagnitude;
     private Vector3 playerPosition;
     Animator animator;
+    private bool frozen = false;
 
     private bool movedLeft = false;
     private bool movedRight = false;
@@ -177,6 +178,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SetFrozen(){
+        if (frozen){
+            frozen = false;
+        }
+        else{
+            frozen = true;
+        }
+    }
+
     //Start and Update
 
     void Start()
@@ -187,14 +197,15 @@ public class Player : MonoBehaviour
 
    void Update()
     {
+        if (frozen == false){
+            movement.x = Input.GetAxis("Horizontal");
+            movement.y = Input.GetAxis("Vertical");
+            movement = Vector3.ClampMagnitude(movement, 1.0f);
+            movementSqrMagnitude = movement.sqrMagnitude;
 
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
-        movement = Vector3.ClampMagnitude(movement, 1.0f);
-        movementSqrMagnitude = movement.sqrMagnitude;
-
-        transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
-        Animation();
+            transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
+            Animation();
+        }
     }   
 
 }

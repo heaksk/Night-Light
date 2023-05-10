@@ -13,12 +13,15 @@ public class test : MonoBehaviour
     public TextAsset textFile;
     public int index;
 
+    public Player player;
+
     List<string> textList = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
         GetTextFromFile(textFile);
         index = 0;
+        player.SetFrozen();
         //this.GetComponent<KeyCode.W>.enabled= false
     }
 
@@ -28,6 +31,7 @@ public class test : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && index == textList.Count)
         {
             gameObject.SetActive(false);
+            player.SetFrozen();
             return;
         }
             if (Input.GetKeyDown(KeyCode.Space))
