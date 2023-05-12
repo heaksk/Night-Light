@@ -6402,8 +6402,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1070990932, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
+      propertyPath: keyclip
+      value: 
+      objectReference: {fileID: 8300000, guid: 21d9a49954323f540935152520428bb1, type: 3}
     - target: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
       propertyPath: keyCount
       value: 
@@ -6505,7 +6509,7 @@ MonoBehaviour:
   audioSource: {fileID: 791271492}
   book: {fileID: 8300000, guid: 9cd10fb735f344046bfcf9f7a9cadec3, type: 3}
   door: {fileID: 8300000, guid: 88a60e3bd379c024fb2f83b6743e0d5b, type: 3}
-  key: {fileID: 8300000, guid: 851657d3588cc434a9d48eead916bad5, type: 3}
+  key: {fileID: 8300000, guid: 21d9a49954323f540935152520428bb1, type: 3}
 --- !u!114 &791271496 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1070990941, guid: daaf5fc8870e2904d806d408096aa908, type: 3}
