@@ -17733,6 +17733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 8923988950138656024, guid: 8b057a6080944a440aab112aedc5bad2, type: 3}
+      propertyPath: m_text
+      value: 'Fuses:'
+      objectReference: {fileID: 0}
     - target: {fileID: 9156417487506915775, guid: 8b057a6080944a440aab112aedc5bad2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
