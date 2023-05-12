@@ -26,6 +26,9 @@ public class voiceMain : MonoBehaviour
             case "key":
                 audioSource.clip = key;
                 break;
+            default:
+                audioSource.clip = null;
+                break;
         }
         audioSource.Play();
     }
