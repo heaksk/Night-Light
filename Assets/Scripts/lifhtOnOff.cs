@@ -20,7 +20,7 @@ public class lifhtOnOff : MonoBehaviour
     {
         distance = Vector3.Distance(light1.transform.position, camera.transform.position);
         print(distance);//将灯和相机的距离打印出来
-        if (distance < 2)//距离判断条件
+        if (distance < 3)//距离判断条件
         {
             light1.SetActive(true);
             light2.SetActive(true);
